@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #bad7ec;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.chat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chat__wrapper {
+    width: 100%;
+}
+
+.chat__interactive {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 10px 0px 10px;
+}
+
+.chat__input {
+    border: 2px solid;
+    border-radius: 0px;
+    border-color: #bad7ec;
+    width: 100%;
+    max-width: 500px;
+    height: 35px;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: aliceblue;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.chat__input:focus {
+    outline: none;
+    border-color: #2b7de9;
+}
+
+.chat__button-submit,
+.chat__button-GPS {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.chat__button-submit {
+    background-color: #2b7de9;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.chat__button-GPS {
+    background-color: #bad7ec;
+    color: #000;
+}
+
+.chat__button-GPS:hover {
+    background-color: #2b7de9;
+    color: #fff;
+}
+
+.chat__body {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px 5px 10px;
+    border: 2px solid #bad7ec;
+    border-radius: 5px;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chat__user-message {
+    width: 170px;
+    display: inline-block;
+    margin: 5px 5px 5px auto;
+    border: 2px solid #bad7ec;
+    border-radius: 5px;
+    padding: 5px 10px;
+    word-wrap: break-word;
+}
+
+.chat__server-message {
+    width: 170px;
+    display: inline-block;
+    margin: 5px auto 5px 5px;
+    border: 2px solid #bad7ec;
+    border-radius: 5px;
+    padding: 5px 10px;
+    word-wrap: break-word;
+}
+
+.chat__body a {
+    margin-top: 10px;
+    text-align: center;
+    color: #2b7de9;
+    text-decoration: underline;
+}
+
+.chat__body a:hover {
+    color: #000;
+    text-decoration: none;
+}
